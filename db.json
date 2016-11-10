@@ -1,1 +1,34 @@
-{}
+{
+  "test": {
+    "message": "this is a test"
+  },
+  "someroute": {
+    "message": "You have hit the test route"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "sample Post 1 hkljhlkjj",
+      "description": "This is a description of pot 1",
+      "author": "Ron Bravo"
+    },
+    {
+      "id": 2,
+      "title": "sample Post 2",
+      "description": "This is a description of pot 2",
+      "author": "Jane Doe"
+    },
+    {
+      "id": 3,
+      "title": "sample Post 3",
+      "description": "This is a description of pot 3",
+      "author": "Jon Doe"
+    },
+    {
+      "title": "a",
+      "description": "b",
+      "author": "c",
+      "id": 4
+    }
+  ]
+}
