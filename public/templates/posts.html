@@ -2,16 +2,20 @@
 <button ng-click="postController.getPostList ()">clickme</button>
 <ul>
     <li ng-repeat="post in postController.postList"] >
-        <strong>title</strong>{{ post.title }}
-        <strong>description</strong>{{ post.description }}
-        <strong>author</strong>{{ post.author }}
+        <div class="post">
+            <strong>title</strong>{{ post.title }}
+            <strong>description</strong>{{ post.description }}
+            <strong>author</strong>{{ post.author }}
+            <button ng-click= 'postController.deletePost (post.id)'>Delete Post</button>
+            <button ng-click= 'postController.editPost (post.id)'>Edit</button>
+        </div>
     </li>
 </ul>
 <button ng-click='postController.getPost ()'>get a single post</button>
 <button ng-click='postController.getPost (1)'>Get post 1</button>
 <button ng-click='postController.getPost (2)'>Get post 2</button>
 <button ng-click='postController.getPost (3)'>Get post 3</button>
-
+<button ng-click= 'postController.deletePost ()'>Delete Post</button>
 <div>
     <strong>title</strong>{{postsController.currentPost.title}}
     <strong>description</strong>{{postsController.currentPost.discrption}}
