@@ -7,28 +7,22 @@
   },
   "posts": [
     {
-      "id": 2,
-      "Title: ": "sample Post 2",
-      "description": "This is a description of post 2",
-      "author": "Jane Doe"
+      "title": "adrian",
+      "description": "amaya",
+      "author": "boy",
+      "id": 6
     },
     {
-      "title": "alwinue",
-      "description": "aldkfnla",
-      "author": "cdw",
-      "id": 3
+      "title": "yellow",
+      "description": "orange",
+      "author": "green",
+      "id": 7
     },
     {
-      "title": "wires",
-      "description": "red",
-      "author": "bannana",
-      "id": 4
-    },
-    {
-      "title": "test",
-      "description": "testing",
-      "author": "tested",
-      "id": 5
+      "title": "tall",
+      "description": "short",
+      "author": "regular",
+      "id": 8
     }
   ]
 }

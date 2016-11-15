@@ -3,9 +3,9 @@
 <ul>
     <li ng-repeat="post in postController.postList"] >
         <div class="post">
-            <strong>title</strong>{{ post.title }}
-            <strong>description</strong>{{ post.description }}
-            <strong>author</strong>{{ post.author }}
+            <strong>Title: </strong>{{ post.title }}
+            <strong>Description: </strong>{{ post.description }}
+            <strong>Author: </strong>{{ post.author }}
             <button ng-click= 'postController.deletePost (post.id)'>Delete Post</button>
             <button ng-click= 'postController.editPost (post.id)'>Edit</button>
         </div>

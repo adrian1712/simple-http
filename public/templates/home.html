@@ -1,1 +1,11 @@
 <h2>home</h2>
+<ul>
+    <li ng-repeat="post in homeController.postList">
+        <div class="post">
+        <strong>name: </strong>{{post.title}}
+        <strong>Description: </strong>{{post.description}}
+        <strong>Author: </strong>{{post.author}}
+        </div>
+
+    </li>
+</ul>
