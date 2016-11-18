@@ -1,30 +1,47 @@
 <h2>posts</h2>
 
-<form>
+<!-- <form>
     <input type="text" placeholder="username" required>
     <input type="password" placeholder="password" maxlength="7" minlength="5" required=>
     <input type="text" placeholder="email" required="">
     <button type="submit">submit</button>
-</form>
+</form> -->
 
 
-<button ng-click="postController.getPostList ()">clickme</button>
+<button class="btn"ng-click="postController.getPostList ()">clickme</button>
 <ul>
     <li ng-repeat="post in postController.postList"] >
         <div class="post">
             <strong>Title: </strong>{{ post.title }}
             <strong>Description: </strong>{{ post.description }}
             <strong>Author: </strong>{{ post.author }}
-            <button ng-click= 'postController.deletePost (post.id)'>Delete Post</button>
-            <button ng-click= 'postController.editPost (post.id)'>Edit</button>
+            <button class="btn" ng-click= 'postController.deletePost (post.id)'>Delete Post</button>
+            <button class="btn" ng-click= 'postController.editPost (post.id)'>Edit</button>
         </div>
     </li>
 </ul>
-<button ng-click='postController.getPost ()'>get a single post</button>
-<button ng-click='postController.getPost (1)'>Get post 1</button>
-<button ng-click='postController.getPost (2)'>Get post 2</button>
-<button ng-click='postController.getPost (3)'>Get post 3</button>
-<button ng-click= 'postController.deletePost ()'>Delete Post</button>
+
+<!-- <nav class="navbar navbar-default">
+         <div class="container-fluid">
+           <div class="navbar-header">
+             <a class="navbar-brand" href="#">Simple Http</a>
+           </div>
+           <ul class="nav navbar-nav">
+             <li "><a href="/#/">Home</a></li>
+             <li><a href="/#/http">Http</a></li>
+             <li><a href="/#/posts">Post</a></li>
+             <li><a href="/#/sample-form">Sample Form</a></li>
+           </ul>
+         </div>
+       </nav> -->
+
+
+
+<button class="btn" ng-click='postController.getPost ()'>get a single post</button>
+<button class="btn" ng-click='postController.getPost (1)'>Get post 1</button>
+<button class="btn" ng-click='postController.getPost (2)'>Get post 2</button>
+<button class="btn" ng-click='postController.getPost (3)'>Get post 3</button>
+<button class="btn" ng-click= 'postController.deletePost ()'>Delete Post</button>
 <div>
     <strong>title</strong>{{postsController.currentPost.title}}
     <strong>description</strong>{{postsController.currentPost.discrption}}
@@ -33,8 +50,14 @@
 
 
 <form ng-submit="postController.save ()">
-    <input name="title" ng-model="postController.title"> <br>
-    <input name="description" ng-model="postController.description"> <br>
-    <input name="author" ng-model="postController.author"> <br>
-    <button type="submit">Save Post</button>
+    <div class="form-group">
+      <input name="title" ng-model="postController.title" class="form-control" placeholder="Title" required>
+    </div>
+    <div class="form-group">
+        <input name="description" ng-model="postController.description" class="form-control" placeholder="Description" required>
+    </div>
+    <div class="form-group">
+        <input name="author" ng-model="postController.author" class="form-control" placeholder="Author" required>
+    </div>
+    <button class="btn" type="submit">Save Post</button>
 </form>

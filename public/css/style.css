@@ -8,3 +8,13 @@ background-color: #fff;
     border-radius: 10px;
     padding: 10px;
 }
+.sandbox {
+    display: none;
+}
+input.ng-invalid{
+    background-color: #fbc4c4
+}
+.form-group p {
+    color: red;
+    font-weight: bold;
+}
