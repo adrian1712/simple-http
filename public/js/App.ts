@@ -32,6 +32,12 @@ namespace App {
                         id: null
                     }
                 })
+                .state ('sample-form', {
+                    url: "/sample-form",
+                    templateUrl:'templates/sample-form.html',
+                    controller: App.SampleFormController,
+                    controllerAs: 'sampleFormController'
+                })
                 ;
         }
     ])

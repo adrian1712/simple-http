@@ -9,20 +9,14 @@
     {
       "title": "adrian",
       "description": "amaya",
-      "author": "boy",
-      "id": 6
+      "author": "yellow",
+      "id": 1
     },
     {
-      "title": "yellow",
-      "description": "orange",
-      "author": "green",
-      "id": 7
-    },
-    {
-      "title": "tall",
-      "description": "short",
-      "author": "regular",
-      "id": 8
+      "description": "rewq",
+      "author": "nbv",
+      "id": 2,
+      "title": "apple"
     }
   ]
 }

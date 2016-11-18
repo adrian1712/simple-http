@@ -2,7 +2,7 @@
 
 <form>
     <label>Title</label>
-    <input ng-model="postEditController.post.title">
+    <input ng-model="postEditController.post.title" required>
     <br>
 
     <label>Description</label>
@@ -13,4 +13,4 @@
     <input ng-model="postEditController.post.author">
     <br>
 <form>
-<button ng-click="postEditController.editPost()">Save Post</button>
+<button ng-click="postEditController.save()">Save Post</button>

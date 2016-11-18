@@ -1,4 +1,13 @@
 <h2>posts</h2>
+
+<form>
+    <input type="text" placeholder="username" required>
+    <input type="password" placeholder="password" maxlength="7" minlength="5" required=>
+    <input type="text" placeholder="email" required="">
+    <button type="submit">submit</button>
+</form>
+
+
 <button ng-click="postController.getPostList ()">clickme</button>
 <ul>
     <li ng-repeat="post in postController.postList"] >
